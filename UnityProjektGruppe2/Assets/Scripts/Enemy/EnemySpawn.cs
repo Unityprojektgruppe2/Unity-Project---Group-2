@@ -7,7 +7,7 @@ public class EnemySpawn : MonoBehaviour
 
     public GameObject box;
     private float time;
-    private List<GameObject> objPool;
+    private List<GameObject> _objPool;
 
 
 
@@ -15,7 +15,7 @@ public class EnemySpawn : MonoBehaviour
 
     void Start()
     {
-        objPool = new List<GameObject>();
+        _objPool = new List<GameObject>();
         BoxSpawn();
     }
 
@@ -26,7 +26,7 @@ public class EnemySpawn : MonoBehaviour
         {
             GameObject newBox = Instantiate(box) as GameObject;
             newBox.SetActive(false);
-            objPool.Add(newBox);
+            _objPool.Add(newBox);
         }
     }
 
@@ -34,13 +34,13 @@ public class EnemySpawn : MonoBehaviour
     {
         bool spawned = false;
 
-        for (int i = 0; i < objPool.Count; i++)
+        for (int i = 0; i < _objPool.Count; i++)
         {
 
-            if (!objPool[i].activeInHierarchy)
+            if (!_objPool[i].activeInHierarchy)
             {
-                objPool[i].SetActive(true);
-                objPool[i].transform.position = new Vector3(0, 50, 0);
+                _objPool[i].SetActive(true);
+                _objPool[i].transform.position = new Vector3(0, 50, 0);
                 spawned = true;
                 break;
             }
@@ -51,7 +51,7 @@ public class EnemySpawn : MonoBehaviour
 
             GameObject newBox = Instantiate(box) as GameObject;
             newBox.transform.position = new Vector3(0, 50, 0);
-            objPool.Add(newBox);
+            _objPool.Add(newBox);
 
         }
 
