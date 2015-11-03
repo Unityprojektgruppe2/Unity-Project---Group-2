@@ -24,7 +24,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 moveVec = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"),0, CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
+        Movement();
+    }
+
+    void Movement()
+    {
+        Vector3 moveVec = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0, CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
         bool isBoosting = CrossPlatformInputManager.GetButton("LeButton");
 
         //Debug.Log(moveVec);
@@ -37,9 +42,16 @@ public class PlayerController : MonoBehaviour
 
 
 
-    public void CollideWithEnemy(Collider2D other)
-    {
 
+
+    public void CollideWithEnemy(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            EnemyHealth enemyHp = other.GetComponent<EnemyHealth>();
+            enemyHp.TakeDamage(10, new Vector3(0, 0, 0));
+
+        }
 
     }
 
