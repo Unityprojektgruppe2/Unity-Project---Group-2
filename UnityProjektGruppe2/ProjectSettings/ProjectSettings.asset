@@ -71,7 +71,11 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
+<<<<<<< HEAD
+  bundleIdentifier: com.YourCompany.YourProductName
+=======
   bundleIdentifier: com.UnityProjektGruppe2.PrototypeHakOgHuk
+>>>>>>> 9d3f816dddac775b53c0ffe30648182ea38e721b
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
@@ -80,7 +84,11 @@ PlayerSettings:
   virtualRealitySupported: 0
   productGUID: 34ceca5765cbe0b448a4d2d52ed0c82d
   AndroidBundleVersionCode: 1
+<<<<<<< HEAD
+  AndroidMinSdkVersion: 9
+=======
   AndroidMinSdkVersion: 15
+>>>>>>> 9d3f816dddac775b53c0ffe30648182ea38e721b
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   apiCompatibilityLevel: 2

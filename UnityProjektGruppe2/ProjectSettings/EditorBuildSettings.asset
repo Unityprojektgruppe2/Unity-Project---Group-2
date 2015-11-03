@@ -6,4 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scenes/levelSilstar.unity
+=======
     path: Assets/Scenes/Level1.unity
+>>>>>>> 9d3f816dddac775b53c0ffe30648182ea38e721b
