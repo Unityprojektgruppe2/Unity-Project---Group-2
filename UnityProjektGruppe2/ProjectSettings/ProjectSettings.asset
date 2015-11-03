@@ -37,7 +37,7 @@ PlayerSettings:
   disableDepthAndStencilBuffers: 0
   defaultIsFullScreen: 1
   defaultIsNativeResolution: 1
-  runInBackground: 1
+  runInBackground: 0
   captureSingleScreen: 0
   Override IPod Music: 0
   Prepare IOS For Recording: 0
@@ -71,24 +71,16 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-<<<<<<< HEAD
-  bundleIdentifier: com.YourCompany.YourProductName
-=======
-  bundleIdentifier: com.UnityProjektGruppe2.PrototypeHakOgHuk
->>>>>>> 9d3f816dddac775b53c0ffe30648182ea38e721b
+  bundleIdentifier: com.Company.ProductName
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
-  productGUID: 34ceca5765cbe0b448a4d2d52ed0c82d
+  productGUID: 72c3660529814c54ba52bb4aca20f66c
   AndroidBundleVersionCode: 1
-<<<<<<< HEAD
   AndroidMinSdkVersion: 9
-=======
-  AndroidMinSdkVersion: 15
->>>>>>> 9d3f816dddac775b53c0ffe30648182ea38e721b
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   apiCompatibilityLevel: 2
@@ -140,11 +132,7 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons:
-  - m_BuildTarget: 
-    m_Icons:
-    - m_Icon: {fileID: 0}
-      m_Size: 5657
+  m_BuildTargetIcons: []
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   webPlayerTemplate: APPLICATION:Default
@@ -209,7 +197,7 @@ PlayerSettings:
   ps4ApplicationParam3: 0
   ps4ApplicationParam4: 0
   ps4GarlicHeapSize: 2048
-  ps4Passcode: frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQ
+  ps4Passcode: 1O8YFOGKjxRrJBdT3hVOfoaMeAjSWfch
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -233,7 +221,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-  psp2PackagePassword: F69AzBlax3CF3EDNhm3soLBPh71Yexui
+  psp2PackagePassword: oZYFYZ5B6kzMCk8R6BEuZMrF6cI6NX8D
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0
@@ -264,16 +252,7 @@ PlayerSettings:
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
-  scriptingDefineSymbols:
-    1: CROSS_PLATFORM_INPUT
-    2: CROSS_PLATFORM_INPUT
-    4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    14: MOBILE_INPUT
-    15: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    16: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    17: MOBILE_INPUT
-    20: MOBILE_INPUT
+  scriptingDefineSymbols: {}
   metroPackageName: UnityProjektGruppe2
   metroPackageLogo: 
   metroPackageLogo140: 
@@ -387,45 +366,11 @@ PlayerSettings:
   XboxOneSplashScreen: {fileID: 0}
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
-  intPropertyNames:
-  - Android::ScriptingBackend
-  - Metro::ScriptingBackend
-  - Standalone::ScriptingBackend
-  - WP8::ScriptingBackend
-  - WebGL::ScriptingBackend
-  - WebGL::audioCompressionFormat
-  - WebGL::exceptionSupport
-  - WebGL::memorySize
-  - iOS::Architecture
-  - iOS::EnableIncrementalBuildSupportForIl2cpp
-  - iOS::ScriptingBackend
-  Android::ScriptingBackend: 0
-  Metro::ScriptingBackend: 2
-  Standalone::ScriptingBackend: 0
-  WP8::ScriptingBackend: 2
-  WebGL::ScriptingBackend: 1
-  WebGL::audioCompressionFormat: 4
-  WebGL::exceptionSupport: 1
-  WebGL::memorySize: 256
-  iOS::Architecture: 2
-  iOS::EnableIncrementalBuildSupportForIl2cpp: 0
-  iOS::ScriptingBackend: 1
+  intPropertyNames: []
   boolPropertyNames:
-  - WebGL::analyzeBuildSize
-  - WebGL::dataCaching
-  - WebGL::useEmbeddedResources
   - XboxOne::enus
-  WebGL::analyzeBuildSize: 0
-  WebGL::dataCaching: 0
-  WebGL::useEmbeddedResources: 0
   XboxOne::enus: 1
-  stringPropertyNames:
-  - WebGL::emscriptenArgs
-  - WebGL::template
-  - additionalIl2CppArgs::additionalIl2CppArgs
-  WebGL::emscriptenArgs: 
-  WebGL::template: APPLICATION:Default
-  additionalIl2CppArgs::additionalIl2CppArgs: 
+  stringPropertyNames: []
   firstStreamedSceneWithResources: 0
   cloudProjectId: 
   projectId: 
