@@ -2,7 +2,7 @@
 
 public class GameOverManager : MonoBehaviour
 {
-	public PlayerHealth playerHealth;       // Reference to the player's health.
+	public PlayerHeatlh playerHealth;       // Reference to the player's health.
 	public float restartDelay = 5f;         // Time to wait before restarting the level
 	
 	
@@ -20,7 +20,7 @@ public class GameOverManager : MonoBehaviour
 	void Update ()
 	{
 		// If the player has run out of health...
-		if(playerHealth.currentHealth <= 0)
+		if(playerHealth.currentHealth <= 0) 
 		{
 			// ... tell the animator the game is over.
 			anim.SetTrigger ("GameOver");

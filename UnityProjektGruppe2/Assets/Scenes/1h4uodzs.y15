@@ -1,0 +1,44 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Swiper : MonoBehaviour {
+
+    Vector2 SwipeMovement;
+    Vector2 SwipeMovement2;
+    Vector2 CurrentSwipe;
+	// Use this for initialization
+	void Start () {
+        Debug.Log(Input.touchCount);
+	}
+	
+	// Update is called once per frame
+	void Update () 
+    {
+	if(Input.touches.Length > 0)
+    {
+        Vector3 wp = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+        Vector2 touchPos = new Vector2(wp.x, wp.y);
+        Collider2D collider2D = GetComponent<Collider2D>();
+        if(collider2D == Physics2D.OverlapPoint(touchPos))
+        {
+
+        
+        Touch t = Input.GetTouch(0);
+        if(t.phase == TouchPhase.Began)
+        {
+            SwipeMovement = new Vector2(t.position.x, t.position.y);
+        }
+        if(t.phase == TouchPhase.Ended)
+        {
+            SwipeMovement2 = new Vector2(t.position.x,t.position.y);
+            CurrentSwipe = new Vector3(SwipeMovement2.x - SwipeMovement.x, SwipeMovement2.y - SwipeMovement.y);
+
+            if(CurrentSwipe.y > 0 && CurrentSwipe.y > - 0.5f && CurrentSwipe.y < 0.5f)
+            {
+                Debug.Log("swipe up");
+            }
+        }
+    }
+    }
+	}
+}
