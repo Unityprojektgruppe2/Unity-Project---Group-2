@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
-
-public class PlayerHeatlh : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
 
     #region Variables
@@ -11,6 +11,7 @@ public class PlayerHeatlh : MonoBehaviour
     public static int maxHealth = 100;
     public float currentHealth = 100;
     public float timesMaxHealth = 0.1f;
+    public Slider healthSlider;   // Reference to the UI's health bar.
 
     GameObject enemy;
     EnemyAttack enemyAttack;
@@ -35,6 +36,7 @@ public class PlayerHeatlh : MonoBehaviour
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
+        healthSlider.value = currentHealth;
     }
     #endregion
 
